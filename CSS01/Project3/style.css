@@ -1,0 +1,160 @@
+@font-face {
+  font-family: readymates;
+  src: url(fonts/readymates.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: readymates;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#left {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #c1e1e3;
+  animation-name: moveAnimation;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3vw;
+  color: #fff;
+  z-index: 99;
+}
+
+#nav a {
+  text-decoration: none;
+  font-size: 1.8vw;
+  color: #fff;
+  font-weight: 500;
+}
+
+#nav i {
+  font-size: 1.2vw;
+}
+
+#left img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation-name: moveAnimation;
+  animation-delay: 0.2s;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 9;
+  opacity: 0;
+  border-radius: 50%;
+}
+
+#left h1 {
+  position: absolute;
+  right: 5%;
+  bottom: 2%;
+  font-size: 3.4vw;
+  font-weight: 500;
+  line-height: 1;
+  z-index: 99;
+  text-align: right;
+  color: #fff;
+}
+
+#right {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+#right img {
+  position: absolute;
+  height: 25vh;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  animation-name: moveAnimation;
+  animation-delay: 0.2s;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  border-radius: 50%;
+}
+
+#right #img1 {
+  width: 15vw;
+  top: 2%;
+  right: 30%;
+}
+
+#right #img2 {
+  width: 18vw;
+  height: 40vh;
+  top: 30%;
+  left: 10%;
+}
+
+#right #img3 {
+  width: 15vw;
+  bottom: 2%;
+  left: 35%;
+}
+
+#right h1 {
+  white-space: nowrap;
+  position: absolute;
+  font-size: 3.4vw;
+  font-weight: 500;
+  rotate: -90deg;
+  top: 50%;
+  left: 75%;
+  transform: translate(0, -50%);
+}
+
+@keyframes moveAnimation {
+  0% {
+    transform: translate(100%, -50%);
+    opacity: 0;
+    border-radius: 50%;
+  }
+  100% {
+    transform: translateX(0%, 0%);
+    opacity: 1;
+    border-radius: 0%;
+  }
+}
