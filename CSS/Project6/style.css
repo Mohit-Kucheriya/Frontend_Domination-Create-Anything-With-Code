@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+#main {
+  width: 100%;
+  position: relative;
+}
+
+#page1 {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+/* Navbar */
+#nav {
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+}
+
+.nav-part1 {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-part1 h3 {
+  font-size: 1.05vw;
+  font-weight: 500;
+}
+
+.nav-part1 h3 a {
+  text-decoration: none;
+  color: #111;
+}
+
+.nav-part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-part2 img {
+  width: 7vw;
+}
+
+.nav-part3 {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5vw;
+}
+
+.nav-part3 button {
+  all: unset;
+  font-size: 1vw;
+  background-color: #111;
+  color: #fff;
+  padding: 0.7vw 1.4vw;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.nav-part3 button:nth-child(1) {
+  position: relative;
+  background-color: transparent;
+  color: #111;
+}
+
+.nav-part3 button:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #111;
+  border-radius: 50%;
+  top: 50%;
+  right: -10%;
+}
+
+/* content */
+#content {
+  width: 100%;
+  min-height: calc(100vh - 12vh);
+  display: flex;
+  align-items: center;
+  padding-top: 13vh;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: center;
+  gap: 5.5vh;
+}
+
+#content h3 {
+  font-size: 1vw;
+  font-family: "Merriweather", serif;
+  background-color: #e8b4ed;
+  padding: 0.6vw 1.05vw;
+  border-radius: 50px;
+  font-weight: 500;
+  animation: backgroundChange 15s linear infinite;
+}
+
+@keyframes backgroundChange {
+  0% {
+    background-color: #e8b4ed;
+  }
+  35% {
+    background-color: #f6e6a7;
+  }
+  65% {
+    background-color: #ffb8c8;
+  }
+  100% {
+    background-color: #fdace7;
+  }
+}
+
+#content h1 {
+  font-size: 4vw;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+}
+
+#content h5 {
+  font-size: 1.6vw;
+  font-weight: 400;
+}
+
+#content button {
+  all: unset;
+  font-size: 1vw;
+  background-color: #111;
+  color: #fff;
+  padding: 1.1vw 1.5vw;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.content-bottom {
+  width: 100%;
+  height: 54vh;
+  display: flex;
+  gap: 2vw;
+  padding: 2vw;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.content-container {
+  display: flex;
+  gap: 2vw;
+  animation: movingContainer 50s linear infinite;
+}
+
+.elem {
+  position: relative;
+  flex-shrink: 0;
+  height: 100%;
+  width: 18vw;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.elem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.elem .elem-text-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 1vw;
+  color: #fff;
+  gap: 1.1vh;
+}
+
+.elem-text-overlay ul {
+  list-style: none;
+  display: flex;
+  gap: 0.6vw;
+}
+
+.elem-text-overlay h4 {
+  font-size: 1vw;
+  font-weight: 500;
+  line-height: 2vh;
+}
+
+.elem-text-overlay ul li {
+  padding: 0.1vw 0.8vw;
+  border: 1px solid #ffffff5b;
+  border-radius: 50px;
+  font-size: 0.9vw;
+  font-weight: 500;
+}
+
+.elem video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes movingContainer {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(calc(-100% - 2vw));
+  }
+}
+
+#page2 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 3vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+#page2 h2 {
+  font-size: 2.8vw;
+  font-weight: 400;
+  text-align: center;
+}
+
+.page2-container {
+  padding: 1vw 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.box {
+  position: relative;
+  width: 21vw;
+  height: 15.3vw;
+  border-radius: 10px;
+  flex-shrink: 0;
+  overflow: hidden;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.box:hover {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box-bottom {
+  position: absolute;
+  width: 100%;
+  height: 10vh;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  bottom: -10vh;
+  transition: all ease 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.2vw;
+}
+
+.box-bottom h3 {
+  color: #fff;
+  font-size: 1.25vw;
+  font-weight: 500;
+}
+
+.box-bottom .icon-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.8vw;
+}
+
+.icon-div i {
+  font-size: 1.15vw;
+  background-color: #fff;
+  padding: 0.7vw 0.7vw;
+  border-radius: 50%;
+}
+
+.box:hover .box-bottom {
+  bottom: 0;
+}
+
+#page3 {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffda79;
+  padding: 7.1vw;
+}
+
+.page3-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5vh;
+}
+
+.page3-container h1 {
+  font-size: 4vw;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+}
+
+.page3-container p {
+  font-size: 1.45vw;
+  font-weight: 300;
+  width: 45%;
+}
+
+.page3-container button {
+  all: unset;
+  font-size: 1vw;
+  background-color: #111;
+  color: #fff;
+  padding: 1.1vw 1.5vw;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.page3-container .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1vw;
+}
+
+.page3-container button:nth-child(2) {
+  background-color: #fff;
+  color: #111;
+}
+
+.page3-container p a {
+  color: #111;
+}
