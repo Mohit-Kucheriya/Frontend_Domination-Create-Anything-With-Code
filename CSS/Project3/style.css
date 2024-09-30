@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+}
+
+#nav-1 {
+  width: 100%;
+  display: flex;
+  height: 9vh;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0vh 2.5vw;
+}
+
+.nav-left {
+  display: flex;
+}
+
+.circle {
+  width: 1vw;
+  height: 1vw;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.nav-right ul {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  list-style: none;
+}
+
+.nav-right ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+.nav-right ul li:nth-last-child(1) {
+  display: none;
+}
+
+.nav-right ul li a span {
+  opacity: 0.5;
+  margin-left: 0.7vw;
+}
+
+#nav-2 {
+  display: flex;
+  width: 100%;
+  height: 9vh;
+  padding: 0vh 2.5vw;
+}
+
+#nav-2 ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 4vw;
+}
+
+#nav-2 ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2vw;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#content {
+  width: 100%;
+  height: calc(100% - 18vh);
+}
+
+#text-content {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+#text-content::-webkit-scrollbar {
+  background-color: transparent;
+  height: 8px;
+}
+
+#text-content::-webkit-scrollbar-thumb {
+  background-color: lightgrey;
+}
+
+.text {
+  flex-shrink: 0;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text h3 {
+  position: relative;
+  font-size: 3.2vw;
+  font-weight: 500;
+}
+
+.text h3::before {
+  content: "01";
+  position: absolute;
+  top: -50%;
+  left: 0;
+  font-size: 2vw;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.text #two::before {
+  content: "02";
+}
+
+.text #three::before {
+  content: "03";
+}
+
+.text #four::before {
+  content: "04";
+}
+.text #five::before {
+  content: "05";
+}
+
+#image-content {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+#image-content::-webkit-scrollbar {
+  display: none;
+}
+
+#image-content .img {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: grayscale();
+}
+
+.img1 {
+  background-image: url("https://images.hdqwalls.com/download/sydney-sweeney-edge-collection-3j-3840x2160.jpg");
+  background-position: 0 60%;
+}
+
+.img2 {
+  background-image: url("https://images.hdqwalls.com/download/josephine-langford-rose-and-ivy-photoshoot-4k-3g-3840x2160.jpg");
+  background-position: 0 45%;
+}
+
+.img3 {
+  background-image: url("https://images.hdqwalls.com/download/madison-beer-ck-2019-8k-q0-7680x4320.jpg");
+  background-position: 0 45%;
+}
+
+.img4 {
+  background-image: url("https://images.hdqwalls.com/download/ariana-grande-elle-2018-0y-3840x2400.jpg");
+  background-position: 0 45%;
+}
+.img5 {
+  background-image: url("https://images.hdqwalls.com/download/2023-kylie-jenner-fall-ad-campaign-py-3840x2160.jpg");
+  background-position: 0 45%;
+}
+
+@media (max-width: 600px) {
+  #nav-1 {
+    height: 6vh;
+    padding: 0vh 4.5vw;
+  }
+
+  .nav-right ul li a {
+    font-size: 3.2vw;
+    display: none;
+  }
+
+  .nav-right ul li:nth-child(1) a {
+    font-size: 3.2vw;
+    display: initial;
+  }
+
+  .nav-right ul li:nth-last-child(1) {
+    display: initial;
+  }
+
+  .nav-right ul li a span {
+    margin-left: 2.7vw;
+  }
+
+  .circle {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  #nav-2 {
+    height: 6vh;
+    padding: 0vh 4.5vw;
+  }
+  #nav-2 ul li a {
+    font-size: 3.2vw;
+  }
+  #nav-2 ul li:nth-child(2n) a {
+    display: none;
+  }
+  .text {
+    width: 90%;
+  }
+
+  .text h3 {
+    font-size: 10.2vw;
+    font-weight: 500;
+  }
+  .text h3::before {
+    content: "01";
+    top: -65%;
+    font-size: 7vw;
+  }
+}
