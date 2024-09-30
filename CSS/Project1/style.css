@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 40px;
+  gap: 2vw;
+}
+
+#nav a {
+  font-size: 1.2vw;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+#nav i {
+  font-size: 1.2vw;
+  background-color: #000;
+  color: #fff;
+  padding: 0.7vw;
+  border-radius: 50%;
+}
+
+#center {
+  padding: 10px 40px 0px 100px;
+  width: 100%;
+}
+
+#center h1 {
+  font-size: 4.3vw;
+  font-weight: 400;
+  line-height: 9.6vh;
+}
+
+#center-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1vh;
+}
+
+#center-bottom p {
+  font-size: 1.2vw;
+  width: 40%;
+  font-weight: 400;
+}
+
+.c-right {
+  width: 20%;
+}
+
+.elem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7vw 0;
+  border-top: 0.25vh solid #000;
+}
+
+.elem a {
+  font-size: 1.2vw;
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+}
+
+.elem i {
+  font-size: 1.2vw;
+  opacity: 0;
+  transition: 0.2s ease;
+}
+
+.elem:hover i {
+  opacity: 1;
+}
+
+#bottom {
+  width: 100%;
+  height: 35%;
+  background-image: url("https://images.unsplash.com/photo-1575752229768-116115c80c8f?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: 0 40%;
+}
+
+@media (max-width: 600px) {
+  #nav {
+    height: 60px;
+    padding: 0px 20px;
+    gap: 5vw;
+  }
+
+  #nav a {
+    font-size: 4vw;
+  }
+
+  #nav i {
+    font-size: 3.2vw;
+    padding: 1.7vw;
+  }
+
+  #center {
+    padding: 22px;
+  }
+
+  #center h1 {
+    font-size: 11.3vw;
+    line-height: 8.6vh;
+  }
+
+  #center-bottom {
+    gap: 4vh;
+    flex-direction: column;
+    margin-top: 3vh;
+  }
+
+  #center-bottom p {
+    font-size: 3.2vw;
+    width: 100%;
+  }
+
+  .c-right {
+    width: 100%;
+  }
+  .elem {
+    border-top: 1px solid #1919197f;
+    padding: 1vw 0;
+  }
+
+  .elem a {
+    font-size: 4vw;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+  }
+  .elem i {
+    font-size: 4.2vw;
+    opacity: 1;
+  }
+}
