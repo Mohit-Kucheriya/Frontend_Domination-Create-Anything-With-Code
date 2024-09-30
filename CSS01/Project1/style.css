@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: readymates;
+  src: url(fonts/readymates.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  color: darkred;
+}
+
+#main-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+#main-text h1 {
+  white-space: nowrap;
+  font-size: 7.1vw;
+  text-transform: capitalize;
+  font-family: readymates;
+  font-weight: 100;
+}
+
+#left {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  background-color: #bbc5d4;
+}
+
+#left-nav {
+  position: absolute;
+  top: 2%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+  padding: 2vw 3vw;
+}
+
+#left-nav h2 {
+  font-size: 1vw;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+#left-nav .left-nav-a {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+#left-nav .left-nav-a a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.7vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: darkred;
+}
+
+#left #left-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18vw;
+  height: 50vh;
+  background-image: url("https://images.unsplash.com/photo-1530903677198-7c9f3577a63e?q=80&w=1904&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+}
+
+#left-img #left-text {
+  position: absolute;
+  top: 110%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#left-text .left-text-h2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  width: 50%;
+}
+
+#left-text .left-text-h2 h2 {
+  font-size: 0.8vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+#left-text .left-text-p {
+  width: 50%;
+}
+
+#left-text .left-text-p p {
+  font-size: 0.8vw;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+#left #left-scroll {
+  position: absolute;
+  bottom: -5%;
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+  transform-origin: 0% 50%;
+  rotate: -90deg;
+  left: 12%;
+}
+
+#left #left-scroll .line {
+  width: 100px;
+  height: 1px;
+  background-color: darkred;
+}
+
+#left-scroll h2 {
+  white-space: nowrap;
+  font-size: 0.8vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+#center {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1540845692348-b9d2bc813a63?q=80&w=1970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+}
+
+#center-box {
+  position: absolute;
+  bottom: 5%;
+  right: -10%;
+  width: 18vw;
+  height: 22vh;
+  background-color: aliceblue;
+  z-index: 99;
+  display: flex;
+}
+
+#center-box .center-box-right {
+  width: 80%;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1515096788709-a3cf4ce0a4a6?q=80&w=1958&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+}
+
+#center-box .center-box-left {
+  width: 20%;
+  height: 100%;
+  background-color: #bbc5d4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#center-box .center-box-left i {
+  font-size: 1.2vw;
+}
+
+#right {
+  position: relative;
+  width: 10%;
+  height: 100%;
+  background-color: #bbc5d4;
+}
+
+#right #right-nav {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw 0;
+}
+
+#right-nav .right-nav-a {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.right-nav-a a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.7vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: darkred;
+}
