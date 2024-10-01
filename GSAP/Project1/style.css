@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif JP", serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #111;
+  color: #fff;
+}
+
+nav {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3vw;
+}
+
+.nav-part1 h3 a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.4vw;
+  font-weight: 300;
+}
+
+.nav-part2 ul {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  list-style: none;
+}
+
+.nav-part2 ul li h3 a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1vw;
+  font-weight: 300;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  padding: 0 12vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.wrapper {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.singleline {
+  display: flex;
+  align-items: center;
+  height: 19vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.text h1 {
+  font-size: 7vw;
+  line-height: 18.2vh;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Noto Serif JP", serif;
+  position: relative;
+  z-index: 99;
+}
+
+.wrapper .singleline:nth-child(1) {
+  margin-top: 20vh;
+  justify-content: left;
+}
+
+.wrapper .singleline:nth-child(2) {
+  justify-content: center;
+}
+
+.wrapper .singleline:nth-child(3) {
+  justify-content: right;
+}
+
+.img-container img {
+  position: absolute;
+  height: 50vh;
+  width: 18vw;
+  object-fit: cover;
+  border-radius: 15px;
+  object-position: center;
+}
+
+#img2 {
+  top: 40%;
+  left: 10%;
+  transform: translate(-50%, -50%) rotate(10deg);
+  object-position: 70% 50%;
+}
+
+#img1 {
+  top: 40%;
+  left: 90%;
+  transform: translate(-50%, -50%) rotate(-10deg);
+}
