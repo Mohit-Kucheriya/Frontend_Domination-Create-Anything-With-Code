@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", system-ui;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 1vw;
+}
+
+/* img {
+  height: 18vw;
+  width: 17vw;
+  object-fit: cover;
+}
+
+#content-tab {
+  display: flex;
+  gap: 1vw;
+}
+
+.content {
+  padding: 0.5vw 1vw;
+  background-color: black;
+  color: #fff;
+  border-radius: 0.5vw;
+  cursor: pointer;
+}
+
+p {
+  font-size: 0.8vw;
+  line-height: 4vh;
+  color: #555;
+  text-align: justify;
+  display: none;
+}
+
+p span {
+  padding: 0.4vw 0.7vw;
+  border-radius: 0.5vw;
+  font-style: italic;
+  font-size: 1.2vw;
+  color: #000;
+  font-weight: 600;
+  background-color: rgba(255, 255, 0, 0.516);
+}
+
+#center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#center h3 {
+  opacity: 0;
+}
+
+#downloadBar {
+  width: 20vw;
+  height: 0.6vw;
+  border-radius: 100px;
+  background-color: #dadada;
+}
+
+#progressBar {
+  width: 0%;
+  height: 100%;
+  background-color: rgb(92, 154, 0);
+  border-radius: 100px;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7;
+}
+
+.container {
+  padding: 10vw 25vw;
+}
+
+.container input {
+  width: 100%;
+  padding: 1vh 1vw;
+  font-size: 1.2vw;
+  border-radius: 1vw;
+  border: 1px solid #555555ab;
+  outline: #555;
+}
+
+.people {
+  margin-top: 2vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5vw;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vh;
+}
+
+.person .img {
+  width: 6vw;
+  height: 6vw;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.person h4 {
+  font-weight: 400;
+  font-size: 1vw;
+  font-style: italic;
+}
+
+textarea {
+  width: 17vw;
+  height: 20vh;
+  font-size: 1.1vw;
+  font-weight: 500;
+  opacity: 0.7;
+  padding: 0.5vw;
+  border: 1px solid #dadada;
+  outline: navy;
+  resize: none;
+}
+
+h3 {
+  font-size: 1vw;
+  font-weight: 400;
+  margin-bottom: 1vh;
+} */
+
+#progressBarScroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 10px;
+  background-color: green;
+  z-index: 99;
+}
+
+#content #para1{
+  font-size: 0.9vw;
+  line-height: 3.5vh;
+  text-align: justify;
+}
