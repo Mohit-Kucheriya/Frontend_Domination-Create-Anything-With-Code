@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* button {
+  all: unset;
+  padding: 0.7vw 1.5vw;
+  background-color: lightblue;
+  color: #000;
+  font-size: 1.15vw;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.8vw;
+}
+
+#main {
+  opacity: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00000061;
+  z-index: 99;
+  transition: all ease-in 0.2s;
+}
+
+#modal {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 22vw;
+  border-radius: 0.8vw;
+  height: 23vh;
+  background-color: #fff;
+  padding: 2vw;
+  transition: all ease-in 0.2s;
+}
+
+#modal h2 {
+  font-size: 1.2vw;
+  color: darkred;
+} */
+
+#main {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+}
+
+#cards {
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2vw;
+  padding: 2vw 0;
+  border-radius: 0.9vw;
+}
+
+#cards .card {
+  width: 15vw;
+  background-color: #f7f7f7;
+  padding: 1vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  border-radius: 0.9vw;
+}
+
+.card img {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card h1 {
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+
+.card #Strangers {
+  font-size: 1.1vw;
+  font-weight: 600;
+  color: rgb(164, 25, 25);
+}
+
+.card #Friends {
+  font-size: 1.1vw;
+  font-weight: 600;
+  color: rgb(23, 210, 23);
+}
+
+.card p {
+  font-size: 0.7vw;
+  opacity: 0.8;
+}
+
+.card button {
+  all: unset;
+  padding: 0.5vw 1vw;
+  color: #fff;
+  font-size: 0.8vw;
+  border-radius: 0.5vw;
+  cursor: pointer;
+}
+
+#cards button.red {
+  background-color: rgb(23, 210, 23);
+}
+#cards button.green {
+  background-color: rgb(164, 25, 25);
+}
