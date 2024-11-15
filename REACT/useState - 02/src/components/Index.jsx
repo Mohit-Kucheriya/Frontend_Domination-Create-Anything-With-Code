@@ -38,5 +38,4 @@ Explanation -
 
 8. Based on the current value of the isFinite property, we are conditionally applying a CSS class to the button element. If the isFinite property is true, the button will have a blue background color. If it is false, the button will have a red background color.
 
-
 */
