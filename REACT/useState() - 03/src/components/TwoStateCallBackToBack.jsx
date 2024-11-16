@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 function TwoStateCallBackToBack() {
     const [val, setVal] = useState(false);
@@ -26,4 +26,4 @@ function TwoStateCallBackToBack() {
     );
 }
 
-export default TwoStateCallBackToBack
+export default TwoStateCallBackToBack;
