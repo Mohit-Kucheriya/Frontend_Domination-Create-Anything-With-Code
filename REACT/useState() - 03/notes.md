@@ -55,7 +55,7 @@ What Happens During the Two setVal Calls?
 
    - React batches updates and processes them sequentially, which results in the state toggling back and forth.
 
-8. React Processes the Queue:
+8. React Processes the Queue: The updater function itself is what gets stored in the queue
 
    a. React Applies the First Updater:
 
