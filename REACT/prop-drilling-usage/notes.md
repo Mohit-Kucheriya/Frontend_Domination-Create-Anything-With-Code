@@ -1,0 +1,1 @@
+1. humara data actually main app components mein hoga aur hum use props ke through pass krenge card mein, har card par ek friend button hoga and humein add friend button par click hone pr alert dena hai.
